@@ -17,4 +17,3 @@ ansible-playbook -i inventory/dev playbooks/longhorn.yaml --user appuser
 Install kubernetes-dashboard
 ```
 ansible-playbook -i inventory/dev playbooks/kubernetes-dashboard.yaml
-```
