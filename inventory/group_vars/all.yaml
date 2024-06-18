@@ -1,0 +1,24 @@
+metallb:
+  address_pool: x.x.x.235-x.x.x.249
+jenkins:
+  admin_username: admin
+  admin_password: S3cret
+  load_balancer_ip: x.x.x
+  install_plugins:
+    - configuration-as-code:1569.vb_72405b_80249            # https://plugins.jenkins.io/configuration-as-code/
+    - git:5.0.0                                             # https://plugins.jenkins.io/git/
+    - job-dsl:1.81                                          # https://plugins.jenkins.io/job-dsl/
+    - kubernetes:3852.v41ea_166a_ed1b_                      # https://plugins.jenkins.io/kubernetes/
+    - kubernetes-credentials-provider:1.209.v862c6e5fb_1ef  # https://plugins.jenkins.io/kubernetes-credentials-provider/
+    - pipeline-stage-view:2.31                              # https://plugins.jenkins.io/pipeline-stage-view/
+    - workflow-aggregator:590.v6a_d052e5a_a_b_5             # https://plugins.jenkins.io/workflow-aggregator/
+docker_hub:
+  username: luisjuanguerrero026
+  password: S3cret
+kubernetes_dashboard:
+  load_balancer_ip: s3cret
+  manifest_url: https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+longhorn:
+  load_balancer_ip: x.x.x.x
+metrics_server:
+  enabled: false
